@@ -1,0 +1,8 @@
+﻿<div>
+    <form action="@Url.Action("Login","Users")" method="post">
+        @Html.AntiForgeryToken()
+        <label>Username</label>
+        <input type="text" id="username" name="username" />
+        <input type="submit" />
+    </form>
+</div>
